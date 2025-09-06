@@ -1,0 +1,68 @@
+site_name: Jiu-Jitsu
+site_description: Documentação Oficial do Projeto Jiu
+site_url: https://github.com/wChrstphr/Jiu-Jitsu
+site_author: Jiu-Jitsu Team
+repo_name: Jiu-Jitsu
+repo_url: https://github.com/wChrstphr/Jiu-Jitsu
+edit_uri: edit/docs/docs/
+
+theme:
+  name: material
+  language: pt-BR
+  custom_dir: overrides
+  logo: assets/logo.png  # Adiciona o logo
+  favicon: assets/favicon.ico  # Adiciona o favicon
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - header.autohide
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+# Paleta
+  palette:
+    # Modo claro
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: "teal"
+      accent: "brown"
+      toggle:
+        icon: material/weather-night
+        name: Mudar para o tema escuro
+    # Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: "teal"
+      accent: "brown"
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para o tema claro
+  
+# For image rendering
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+plugins:
+  - glightbox:
+       touchNavigation: true
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       caption_position: bottom
+
+nav:
+  - Início: index.md
+
+
+# Extra CSS
+extra_css:
+  - extra.css  # Arquivo CSS customizado
