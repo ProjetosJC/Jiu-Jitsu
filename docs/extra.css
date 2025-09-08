@@ -20,6 +20,6 @@ body {
 }
 
 .md-header__button.md-logo img {
-    width: 50px !important;  /* Ajuste o valor conforme necessário */
+    width: 30px !important;  /* Ajuste o valor conforme necessário */
     height: auto !important;
 }
