@@ -21,16 +21,16 @@ theme:
     - navigation.tracking
     - search.suggest
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - toc.follow
     - content.code.copy
+    - navigation.instant.progress
 # Paleta
   palette:
     # Modo claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: "teal"
+      primary: "red"
       accent: "brown"
       toggle:
         icon: material/weather-night
@@ -38,7 +38,7 @@ theme:
     # Modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: "teal"
+      primary: "red"
       accent: "brown"
       toggle:
         icon: material/weather-sunny
