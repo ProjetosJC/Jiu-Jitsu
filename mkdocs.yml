@@ -1,9 +1,9 @@
 site_name: Jiu-Jitsu
 site_description: Documentação Oficial do Projeto Jiu
-site_url: https://github.com/wChrstphr/Jiu-Jitsu
+site_url: https://projetosjc.github.io/Jiu-Jitsu/
 site_author: Jiu-Jitsu Team
 repo_name: Jiu-Jitsu
-repo_url: https://github.com/wChrstphr/Jiu-Jitsu
+repo_url: https://projetosjc.github.io/Jiu-Jitsu/
 edit_uri: edit/docs/docs/
 
 theme:
@@ -11,20 +11,26 @@ theme:
   language: pt-BR
   custom_dir: overrides
   logo: assets/logo.png  # Adiciona o logo
-  favicon: assets/favicon.ico  # Adiciona o favicon
+  favicon: assets/logoJJ.ico  # Adiciona o favicon
   features:
-    - content.code.annotate
+    - content.code.annotation
     - content.tabs.link
     - header.autohide
     - navigation.instant
     - navigation.top
     - navigation.tracking
+    - search.suggest
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - content.code.copy
+    - navigation.instant.progress
 # Paleta
   palette:
     # Modo claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: "teal"
+      primary: "red"
       accent: "brown"
       toggle:
         icon: material/weather-night
@@ -32,7 +38,7 @@ theme:
     # Modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: "teal"
+      primary: "red"
       accent: "brown"
       toggle:
         icon: material/weather-sunny
@@ -61,6 +67,16 @@ plugins:
 
 nav:
   - Início: index.md
+  - Visão do Produto e Projeto:
+      - Cenário Atual do Cliente e do Negócio: visao/1-cenario.md
+      - Solução Proposta: visao/2-solucao.md
+      - Estratégias de Engenharia de Software: visao/3-estrategia.md
+      - Engenharia de Requisitos: visao/4-engenharia.md #nova aba
+      - Cronogramas e Entregas: visao/5-cronograma.md
+      - Interação Entre Equipe e Cliente: visao/6-interacao.md
+      - Requisitos de Software: visao/7-requisitos.md #nova aba
+      - DoR e DoD: visao/8-dor-e-dod.md #nova aba
+      - Backlog de Produto: visao/9-backlog.md #nova aba
 
 
 # Extra CSS
